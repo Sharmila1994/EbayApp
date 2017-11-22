@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0517A6A61FC46C3E001CE66D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0517A6A51FC46C3E001CE66D /* SecondViewController.swift */; };
+		058E3DB71FC419A200B4F986 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058E3DB61FC419A200B4F986 /* LoginModel.swift */; };
 		05B2CDC01FC3DDB90067A812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B2CDBF1FC3DDB90067A812 /* AppDelegate.swift */; };
 		05B2CDC21FC3DDB90067A812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B2CDC11FC3DDB90067A812 /* ViewController.swift */; };
 		05B2CDC51FC3DDB90067A812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B2CDC31FC3DDB90067A812 /* Main.storyboard */; };
@@ -14,6 +16,9 @@
 		05B2CDCA1FC3DDB90067A812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B2CDC81FC3DDB90067A812 /* LaunchScreen.storyboard */; };
 		05B2CDD51FC3DDBA0067A812 /* EbayAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B2CDD41FC3DDBA0067A812 /* EbayAppTests.swift */; };
 		05B2CDE01FC3DDBA0067A812 /* EbayAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B2CDDF1FC3DDBA0067A812 /* EbayAppUITests.swift */; };
+		05B2CDF01FC3E2670067A812 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 05B2CDEF1FC3E2670067A812 /* images.jpeg */; };
+		05B2CDF21FC3E2720067A812 /* images-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 05B2CDF11FC3E2720067A812 /* images-2.jpeg */; };
+		05B2CDF41FC3E2780067A812 /* images-3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 05B2CDF31FC3E2780067A812 /* images-3.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0517A6A51FC46C3E001CE66D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		058E3DB61FC419A200B4F986 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		05B2CDBC1FC3DDB90067A812 /* EbayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EbayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B2CDBF1FC3DDB90067A812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05B2CDC11FC3DDB90067A812 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,9 @@
 		05B2CDDB1FC3DDBA0067A812 /* EbayAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EbayAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B2CDDF1FC3DDBA0067A812 /* EbayAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EbayAppUITests.swift; sourceTree = "<group>"; };
 		05B2CDE11FC3DDBA0067A812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05B2CDEF1FC3E2670067A812 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpeg; path = ../../../../../Downloads/images.jpeg; sourceTree = "<group>"; };
+		05B2CDF11FC3E2720067A812 /* images-2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "images-2.jpeg"; path = "../../../../../Downloads/images-2.jpeg"; sourceTree = "<group>"; };
+		05B2CDF31FC3E2780067A812 /* images-3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "images-3.jpeg"; path = "../../../../../Downloads/images-3.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0517A6A01FC44222001CE66D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				058E3DB61FC419A200B4F986 /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0517A6A11FC44236001CE66D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05B2CDBF1FC3DDB90067A812 /* AppDelegate.swift */,
+				05B2CDC11FC3DDB90067A812 /* ViewController.swift */,
+				0517A6A51FC46C3E001CE66D /* SecondViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0517A6A21FC44244001CE66D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				05B2CDC31FC3DDB90067A812 /* Main.storyboard */,
+				05B2CDC81FC3DDB90067A812 /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		05B2CDB31FC3DDB90067A812 = {
 			isa = PBXGroup;
 			children = (
@@ -97,11 +134,13 @@
 		05B2CDBE1FC3DDB90067A812 /* EbayApp */ = {
 			isa = PBXGroup;
 			children = (
-				05B2CDBF1FC3DDB90067A812 /* AppDelegate.swift */,
-				05B2CDC11FC3DDB90067A812 /* ViewController.swift */,
-				05B2CDC31FC3DDB90067A812 /* Main.storyboard */,
+				0517A6A21FC44244001CE66D /* view */,
+				0517A6A11FC44236001CE66D /* Controller */,
+				0517A6A01FC44222001CE66D /* Model */,
 				05B2CDC61FC3DDB90067A812 /* Assets.xcassets */,
-				05B2CDC81FC3DDB90067A812 /* LaunchScreen.storyboard */,
+				05B2CDEF1FC3E2670067A812 /* images.jpeg */,
+				05B2CDF11FC3E2720067A812 /* images-2.jpeg */,
+				05B2CDF31FC3E2780067A812 /* images-3.jpeg */,
 				05B2CDCB1FC3DDB90067A812 /* Info.plist */,
 			);
 			path = EbayApp;
@@ -233,8 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				05B2CDCA1FC3DDB90067A812 /* LaunchScreen.storyboard in Resources */,
+				05B2CDF41FC3E2780067A812 /* images-3.jpeg in Resources */,
+				05B2CDF01FC3E2670067A812 /* images.jpeg in Resources */,
 				05B2CDC71FC3DDB90067A812 /* Assets.xcassets in Resources */,
 				05B2CDC51FC3DDB90067A812 /* Main.storyboard in Resources */,
+				05B2CDF21FC3E2720067A812 /* images-2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +301,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0517A6A61FC46C3E001CE66D /* SecondViewController.swift in Sources */,
 				05B2CDC21FC3DDB90067A812 /* ViewController.swift in Sources */,
+				058E3DB71FC419A200B4F986 /* LoginModel.swift in Sources */,
 				05B2CDC01FC3DDB90067A812 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
