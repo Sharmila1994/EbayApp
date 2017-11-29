@@ -13,6 +13,7 @@ class productTableViewCell: UITableViewCell {
     @IBOutlet weak var title1lbl: UILabel!
     
     @IBOutlet weak var txtview1: UITextView!
+    
     @IBOutlet weak var lbl1: UILabel!
     
     

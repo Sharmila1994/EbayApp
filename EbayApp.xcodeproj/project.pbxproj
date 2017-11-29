@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		050947531FCBF21F0030AA87 /* sellProducts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 050947521FCBF21F0030AA87 /* sellProducts.plist */; };
+		05167ABF1FCD75070045E618 /* Black_dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 05167ABE1FCD75060045E618 /* Black_dot.png */; };
+		05167AC11FCD766C0045E618 /* Time.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 05167AC01FCD76690045E618 /* Time.jpeg */; };
+		05167AC31FCD77B20045E618 /* MyBidsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05167AC21FCD77B20045E618 /* MyBidsViewController.swift */; };
+		05167AC51FCD7C110045E618 /* MyBidsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05167AC41FCD7C110045E618 /* MyBidsTableViewCell.swift */; };
+		05167AC71FCDA21B0045E618 /* LapTop.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 05167AC61FCDA21B0045E618 /* LapTop.jpeg */; };
+		05167AC91FCDA2290045E618 /* LeatherShoe.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 05167AC81FCDA2280045E618 /* LeatherShoe.jpeg */; };
+		05167ACB1FCDA22F0045E618 /* Iphone5S.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 05167ACA1FCDA22E0045E618 /* Iphone5S.jpeg */; };
 		058E3DB71FC419A200B4F986 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058E3DB61FC419A200B4F986 /* LoginModel.swift */; };
 		05B2CDC01FC3DDB90067A812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B2CDBF1FC3DDB90067A812 /* AppDelegate.swift */; };
 		05B2CDC21FC3DDB90067A812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B2CDC11FC3DDB90067A812 /* ViewController.swift */; };
@@ -16,9 +23,6 @@
 		05B2CDCA1FC3DDB90067A812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B2CDC81FC3DDB90067A812 /* LaunchScreen.storyboard */; };
 		05B2CDD51FC3DDBA0067A812 /* EbayAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B2CDD41FC3DDBA0067A812 /* EbayAppTests.swift */; };
 		05B2CDE01FC3DDBA0067A812 /* EbayAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B2CDDF1FC3DDBA0067A812 /* EbayAppUITests.swift */; };
-		05B2CDF01FC3E2670067A812 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 05B2CDEF1FC3E2670067A812 /* images.jpeg */; };
-		05B2CDF21FC3E2720067A812 /* images-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 05B2CDF11FC3E2720067A812 /* images-2.jpeg */; };
-		05B2CDF41FC3E2780067A812 /* images-3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 05B2CDF31FC3E2780067A812 /* images-3.jpeg */; };
 		05E66DF31FC5ABCF00A38DFC /* productTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E66DF21FC5ABCF00A38DFC /* productTableViewCell.swift */; };
 		05E66DF51FC5AE8000A38DFC /* SellProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E66DF41FC5AE8000A38DFC /* SellProductViewController.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +46,13 @@
 
 /* Begin PBXFileReference section */
 		050947521FCBF21F0030AA87 /* sellProducts.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = sellProducts.plist; sourceTree = "<group>"; };
+		05167ABE1FCD75060045E618 /* Black_dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Black_dot.png; path = ../../../../../Downloads/Black_dot.png; sourceTree = "<group>"; };
+		05167AC01FCD76690045E618 /* Time.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Time.jpeg; path = ../../../../../Downloads/Time.jpeg; sourceTree = "<group>"; };
+		05167AC21FCD77B20045E618 /* MyBidsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBidsViewController.swift; sourceTree = "<group>"; };
+		05167AC41FCD7C110045E618 /* MyBidsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBidsTableViewCell.swift; sourceTree = "<group>"; };
+		05167AC61FCDA21B0045E618 /* LapTop.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = LapTop.jpeg; path = ../../../../../Downloads/LapTop.jpeg; sourceTree = "<group>"; };
+		05167AC81FCDA2280045E618 /* LeatherShoe.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = LeatherShoe.jpeg; path = ../../../../../Downloads/LeatherShoe.jpeg; sourceTree = "<group>"; };
+		05167ACA1FCDA22E0045E618 /* Iphone5S.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Iphone5S.jpeg; path = ../../../../../Downloads/Iphone5S.jpeg; sourceTree = "<group>"; };
 		058E3DB61FC419A200B4F986 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		05B2CDBC1FC3DDB90067A812 /* EbayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EbayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B2CDBF1FC3DDB90067A812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,9 +67,6 @@
 		05B2CDDB1FC3DDBA0067A812 /* EbayAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EbayAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B2CDDF1FC3DDBA0067A812 /* EbayAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EbayAppUITests.swift; sourceTree = "<group>"; };
 		05B2CDE11FC3DDBA0067A812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05B2CDEF1FC3E2670067A812 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpeg; path = ../../../../../Downloads/images.jpeg; sourceTree = "<group>"; };
-		05B2CDF11FC3E2720067A812 /* images-2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "images-2.jpeg"; path = "../../../../../Downloads/images-2.jpeg"; sourceTree = "<group>"; };
-		05B2CDF31FC3E2780067A812 /* images-3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "images-3.jpeg"; path = "../../../../../Downloads/images-3.jpeg"; sourceTree = "<group>"; };
 		05E66DF21FC5ABCF00A38DFC /* productTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productTableViewCell.swift; sourceTree = "<group>"; };
 		05E66DF41FC5AE8000A38DFC /* SellProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellProductViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +111,8 @@
 				05B2CDC11FC3DDB90067A812 /* ViewController.swift */,
 				05E66DF41FC5AE8000A38DFC /* SellProductViewController.swift */,
 				05E66DF21FC5ABCF00A38DFC /* productTableViewCell.swift */,
+				05167AC21FCD77B20045E618 /* MyBidsViewController.swift */,
+				05167AC41FCD7C110045E618 /* MyBidsTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -143,9 +153,11 @@
 				0517A6A11FC44236001CE66D /* Controller */,
 				0517A6A01FC44222001CE66D /* Model */,
 				05B2CDC61FC3DDB90067A812 /* Assets.xcassets */,
-				05B2CDEF1FC3E2670067A812 /* images.jpeg */,
-				05B2CDF11FC3E2720067A812 /* images-2.jpeg */,
-				05B2CDF31FC3E2780067A812 /* images-3.jpeg */,
+				05167AC61FCDA21B0045E618 /* LapTop.jpeg */,
+				05167AC81FCDA2280045E618 /* LeatherShoe.jpeg */,
+				05167ACA1FCDA22E0045E618 /* Iphone5S.jpeg */,
+				05167ABE1FCD75060045E618 /* Black_dot.png */,
+				05167AC01FCD76690045E618 /* Time.jpeg */,
 				05B2CDCB1FC3DDB90067A812 /* Info.plist */,
 				050947521FCBF21F0030AA87 /* sellProducts.plist */,
 			);
@@ -277,13 +289,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05167AC91FCDA2290045E618 /* LeatherShoe.jpeg in Resources */,
 				050947531FCBF21F0030AA87 /* sellProducts.plist in Resources */,
 				05B2CDCA1FC3DDB90067A812 /* LaunchScreen.storyboard in Resources */,
-				05B2CDF41FC3E2780067A812 /* images-3.jpeg in Resources */,
-				05B2CDF01FC3E2670067A812 /* images.jpeg in Resources */,
+				05167AC11FCD766C0045E618 /* Time.jpeg in Resources */,
+				05167ACB1FCDA22F0045E618 /* Iphone5S.jpeg in Resources */,
+				05167ABF1FCD75070045E618 /* Black_dot.png in Resources */,
+				05167AC71FCDA21B0045E618 /* LapTop.jpeg in Resources */,
 				05B2CDC71FC3DDB90067A812 /* Assets.xcassets in Resources */,
 				05B2CDC51FC3DDB90067A812 /* Main.storyboard in Resources */,
-				05B2CDF21FC3E2720067A812 /* images-2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +326,8 @@
 				05B2CDC21FC3DDB90067A812 /* ViewController.swift in Sources */,
 				05E66DF31FC5ABCF00A38DFC /* productTableViewCell.swift in Sources */,
 				058E3DB71FC419A200B4F986 /* LoginModel.swift in Sources */,
+				05167AC31FCD77B20045E618 /* MyBidsViewController.swift in Sources */,
+				05167AC51FCD7C110045E618 /* MyBidsTableViewCell.swift in Sources */,
 				05B2CDC01FC3DDB90067A812 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

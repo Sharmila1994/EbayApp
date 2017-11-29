@@ -13,7 +13,7 @@ class ViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        let preferences = UserDefaults.standard
+      /*  let preferences = UserDefaults.standard
         if(preferences.object(forKey: "session") != nil)
         {
             LoginDone()
@@ -24,7 +24,8 @@ class ViewController: UIViewController
         }
         
     }
-
+*/
+    }
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
@@ -35,7 +36,7 @@ class ViewController: UIViewController
     @IBAction func signinbutton(_ sender: Any)
     {
         
-        if(signinLbl.titleLabel?.text == "Logout")
+       /* if(signinLbl.titleLabel?.text == "Logout")
         {
             let preferences = UserDefaults.standard
             
@@ -44,20 +45,21 @@ class ViewController: UIViewController
            return
         }
         
-           
+           */
         
         let emailid = emaillbl.text
         let password = pwdlbl.text
         
-        DoLogin(emaillbl: emailid!, pwdlbl: password!)
+       // DoLogin(emaillbl: emailid!, pwdlbl: password!)
         
         if(emailid == ""  || password == "")
         {
-            return
+           // return
+               // self.ViewController(SellProductViewController, animated:true, completion:nil)
         }
     }
         
-        func DoLogin(emaillbl:String, pwdlbl:String)
+       /*  func DoLogin(emaillbl:String, pwdlbl:String)
         {
             
         
@@ -140,6 +142,6 @@ func LoginDone()
 }
 
 }
-
-
+*/
+}
 
