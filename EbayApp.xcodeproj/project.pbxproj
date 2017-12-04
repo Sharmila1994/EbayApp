@@ -16,8 +16,11 @@
 		05167AC91FCDA2290045E618 /* LeatherShoe.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 05167AC81FCDA2280045E618 /* LeatherShoe.jpeg */; };
 		05167ACB1FCDA22F0045E618 /* Iphone5S.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 05167ACA1FCDA22E0045E618 /* Iphone5S.jpeg */; };
 		058E3DB71FC419A200B4F986 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058E3DB61FC419A200B4F986 /* LoginModel.swift */; };
+		0592EA641FD530900055ECBC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592EA601FD530900055ECBC /* DetailViewController.swift */; };
+		0592EA651FD530900055ECBC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592EA611FD530900055ECBC /* TableViewCell.swift */; };
+		0592EA6E1FD53FDA0055ECBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592EA6D1FD53FDA0055ECBC /* ViewController.swift */; };
 		05B2CDC01FC3DDB90067A812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B2CDBF1FC3DDB90067A812 /* AppDelegate.swift */; };
-		05B2CDC21FC3DDB90067A812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B2CDC11FC3DDB90067A812 /* ViewController.swift */; };
+		05B2CDC21FC3DDB90067A812 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B2CDC11FC3DDB90067A812 /* LoginViewController.swift */; };
 		05B2CDC51FC3DDB90067A812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B2CDC31FC3DDB90067A812 /* Main.storyboard */; };
 		05B2CDC71FC3DDB90067A812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05B2CDC61FC3DDB90067A812 /* Assets.xcassets */; };
 		05B2CDCA1FC3DDB90067A812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B2CDC81FC3DDB90067A812 /* LaunchScreen.storyboard */; };
@@ -54,9 +57,12 @@
 		05167AC81FCDA2280045E618 /* LeatherShoe.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = LeatherShoe.jpeg; path = ../../../../../Downloads/LeatherShoe.jpeg; sourceTree = "<group>"; };
 		05167ACA1FCDA22E0045E618 /* Iphone5S.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Iphone5S.jpeg; path = ../../../../../Downloads/Iphone5S.jpeg; sourceTree = "<group>"; };
 		058E3DB61FC419A200B4F986 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		0592EA601FD530900055ECBC /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0592EA611FD530900055ECBC /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		0592EA6D1FD53FDA0055ECBC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		05B2CDBC1FC3DDB90067A812 /* EbayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EbayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B2CDBF1FC3DDB90067A812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		05B2CDC11FC3DDB90067A812 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		05B2CDC11FC3DDB90067A812 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		05B2CDC41FC3DDB90067A812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05B2CDC61FC3DDB90067A812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05B2CDC91FC3DDB90067A812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,8 +113,11 @@
 		0517A6A11FC44236001CE66D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0592EA601FD530900055ECBC /* DetailViewController.swift */,
+				0592EA611FD530900055ECBC /* TableViewCell.swift */,
+				0592EA6D1FD53FDA0055ECBC /* ViewController.swift */,
 				05B2CDBF1FC3DDB90067A812 /* AppDelegate.swift */,
-				05B2CDC11FC3DDB90067A812 /* ViewController.swift */,
+				05B2CDC11FC3DDB90067A812 /* LoginViewController.swift */,
 				05E66DF41FC5AE8000A38DFC /* SellProductViewController.swift */,
 				05E66DF21FC5ABCF00A38DFC /* productTableViewCell.swift */,
 				05167AC21FCD77B20045E618 /* MyBidsViewController.swift */,
@@ -322,11 +331,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0592EA641FD530900055ECBC /* DetailViewController.swift in Sources */,
 				05E66DF51FC5AE8000A38DFC /* SellProductViewController.swift in Sources */,
-				05B2CDC21FC3DDB90067A812 /* ViewController.swift in Sources */,
+				05B2CDC21FC3DDB90067A812 /* LoginViewController.swift in Sources */,
 				05E66DF31FC5ABCF00A38DFC /* productTableViewCell.swift in Sources */,
 				058E3DB71FC419A200B4F986 /* LoginModel.swift in Sources */,
+				0592EA651FD530900055ECBC /* TableViewCell.swift in Sources */,
 				05167AC31FCD77B20045E618 /* MyBidsViewController.swift in Sources */,
+				0592EA6E1FD53FDA0055ECBC /* ViewController.swift in Sources */,
 				05167AC51FCD7C110045E618 /* MyBidsTableViewCell.swift in Sources */,
 				05B2CDC01FC3DDB90067A812 /* AppDelegate.swift in Sources */,
 			);
