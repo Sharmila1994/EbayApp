@@ -24,6 +24,9 @@ class SellProductViewController: UIViewController,UITableViewDataSource,UITableV
     
  
     @IBAction func cancelButton(_ sender: Any) {
+    
+      
+    
     }
     
 
@@ -121,7 +124,8 @@ func saveButton(_ sender: UIButton)
         
         alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default, handler: { (action) in
             alert.dismiss(animated: true, completion: nil)
-            self.performSegue(withIdentifier: "tabbarID", sender: nil)
+            
+            self.performSegue(withIdentifier: "saveToHomeIdentifier", sender: nil)
             print("Yes")
         }))
         alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.default, handler: { (action) in

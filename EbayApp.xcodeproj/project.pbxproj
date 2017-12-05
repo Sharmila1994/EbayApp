@@ -119,9 +119,7 @@
 				05B2CDBF1FC3DDB90067A812 /* AppDelegate.swift */,
 				05B2CDC11FC3DDB90067A812 /* LoginViewController.swift */,
 				05E66DF41FC5AE8000A38DFC /* SellProductViewController.swift */,
-				05E66DF21FC5ABCF00A38DFC /* productTableViewCell.swift */,
 				05167AC21FCD77B20045E618 /* MyBidsViewController.swift */,
-				05167AC41FCD7C110045E618 /* MyBidsTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -130,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				05B2CDC31FC3DDB90067A812 /* Main.storyboard */,
+				05E66DF21FC5ABCF00A38DFC /* productTableViewCell.swift */,
+				05167AC41FCD7C110045E618 /* MyBidsTableViewCell.swift */,
 				05B2CDC81FC3DDB90067A812 /* LaunchScreen.storyboard */,
 			);
 			path = view;

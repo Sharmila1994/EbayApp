@@ -14,6 +14,8 @@ class MyBidsViewController: UIViewController, UITableViewDataSource, UITableView
     var bidAmount:NSArray = []
     var topPrice:NSArray = []
     var bidStatus:NSArray = []
+    var imageArray = Array<UIImage>()
+    
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -29,6 +31,8 @@ class MyBidsViewController: UIViewController, UITableViewDataSource, UITableView
         cell.bidAmountlbl.text! = bidAmount[indexPath.row] as! String
         cell.topPriceLbl.text! = topPrice[indexPath.row] as! String
         cell.bidStatusLbl.text! = bidStatus[indexPath.row] as! String
+        cell.imageLbl.image  = imageArray[indexPath.row]
+        
         return cell
     }
     
@@ -39,6 +43,7 @@ class MyBidsViewController: UIViewController, UITableViewDataSource, UITableView
         bidAmount = ["Bid Amount:20$" , "Bid Amount:600$" ]
         topPrice = ["Top Price:35$","Top Price:950$"]
         bidStatus = ["Bid Status:open", "Bid Status:closed"]
+   imageArray += [ UIImage(named: "1")!, UIImage(named: "2")!, UIImage(named: "3")!, UIImage(named: "4")!, UIImage(named: "5")!]
         
         // Do any additional setup after loading the view.
     }

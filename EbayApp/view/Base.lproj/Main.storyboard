@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvc-uY-BgR">
-                                <rect key="frame" x="147" y="305" width="82" height="30"/>
+                                <rect key="frame" x="129" y="305" width="82" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="RGO-bS-iE9"/>
                                     <constraint firstAttribute="width" constant="82" id="Sjw-MZ-tMC"/>
@@ -34,7 +34,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER THE EMAIL ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tbJ-tD-lgm">
-                                <rect key="frame" x="76" y="115" width="243" height="30"/>
+                                <rect key="frame" x="66" y="115" width="243" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="243" id="2v8-JR-AKL"/>
                                     <constraint firstAttribute="height" constant="30" id="pih-ma-LL3"/>
@@ -44,7 +44,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER THE PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Hd-rs-CrQ">
-                                <rect key="frame" x="76" y="176" width="243" height="30"/>
+                                <rect key="frame" x="66" y="176" width="243" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="V3n-uV-QVv"/>
                                     <constraint firstAttribute="width" constant="243" id="XVP-oZ-IGX"/>
@@ -56,13 +56,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.45932233300000003" green="0.64234005900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="tbJ-tD-lgm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="0k6-GR-oTP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cvc-uY-BgR" secondAttribute="trailing" constant="146" id="JEM-IU-qSP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tbJ-tD-lgm" secondAttribute="trailing" constant="56" id="Lcg-E7-IQY"/>
+                            <constraint firstItem="tbJ-tD-lgm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="0k6-GR-oTP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cvc-uY-BgR" secondAttribute="trailing" constant="164" id="JEM-IU-qSP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tbJ-tD-lgm" secondAttribute="trailing" constant="66" id="Lcg-E7-IQY"/>
                             <constraint firstItem="tbJ-tD-lgm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="95" id="b9B-VT-Azy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Hd-rs-CrQ" secondAttribute="trailing" constant="56" id="c4h-3W-ltO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Hd-rs-CrQ" secondAttribute="trailing" constant="66" id="c4h-3W-ltO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cvc-uY-BgR" secondAttribute="bottom" constant="332" id="guL-AA-laX"/>
-                            <constraint firstItem="5Hd-rs-CrQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="ivs-d3-sRf"/>
+                            <constraint firstItem="5Hd-rs-CrQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="ivs-d3-sRf"/>
                             <constraint firstItem="cvc-uY-BgR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="285" id="oBK-Cf-3B6"/>
                             <constraint firstItem="5Hd-rs-CrQ" firstAttribute="top" secondItem="tbJ-tD-lgm" secondAttribute="bottom" constant="31" id="oOB-fC-Ufa"/>
                         </constraints>
@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1764" y="-1365"/>
+            <point key="canvasLocation" x="-2054" y="-1666"/>
         </scene>
         <!--Sell Product View Controller-->
         <scene sceneID="Kjb-wM-W5J">
@@ -201,12 +201,12 @@
                         <viewLayoutGuide key="safeArea" id="m48-L1-KZR"/>
                     </view>
                     <connections>
-                        <segue destination="bk0-mf-jHF" kind="show" identifier="tabbarID" id="aSh-0y-fiG"/>
+                        <segue destination="nHi-Cf-hRg" kind="presentation" identifier="saveToHomeIdentifier" id="rvg-sj-deB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WKy-ic-7JP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-892" y="-1365"/>
+            <point key="canvasLocation" x="-898" y="-1711"/>
         </scene>
         <!--My SoldItems-->
         <scene sceneID="dlM-DU-uO0">
@@ -336,7 +336,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EXB-7y-JE6"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="MyBids" id="CEJ-2y-n5J">
+                    <tabBarItem key="tabBarItem" title="MyBids" image="Black_dot.png" selectedImage="Black_dot.png" id="CEJ-2y-n5J">
                         <inset key="largeContentSizeImageInsets" minX="0.0" minY="1" maxX="0.0" maxY="1"/>
                     </tabBarItem>
                 </viewController>
@@ -367,11 +367,11 @@
             <objects>
                 <viewController title="Home Page-LiveAuction" modalTransitionStyle="flipHorizontal" id="nHi-Cf-hRg" customClass="ViewController" customModule="EbayApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uGm-br-Tnj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="50" sectionFooterHeight="20" translatesAutoresizingMaskIntoConstraints="NO" id="ur6-xB-8Pc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="566"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="566"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="566" id="ujf-iE-IBv"/>
@@ -389,6 +389,7 @@
                                     <color key="tintColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
                                         <action selector="SegmentLbl:" destination="nHi-Cf-hRg" eventType="valueChanged" id="XUh-IR-7ff"/>
+                                        <segue destination="bk0-mf-jHF" kind="presentation" identifier="HomeToMyProfileIdentifier" id="cQJ-Dw-vsH"/>
                                     </connections>
                                 </segmentedControl>
                                 <prototypes>
@@ -515,7 +516,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eq-cu-a55">
-                                <rect key="frame" x="0.0" y="563" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="583" width="375" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="Hc0-xI-MqF"/>
@@ -527,7 +528,7 @@
                                 </state>
                                 <connections>
                                     <action selector="PlaceAbidLbl:" destination="r1E-vc-1B0" eventType="touchUpInside" id="VGj-Wi-I6f"/>
-                                    <segue destination="JtY-aj-myj" kind="presentation" id="11A-QT-pzg"/>
+                                    <segue destination="JtY-aj-myj" kind="presentation" identifier="" id="11A-QT-pzg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -558,7 +559,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CMd-Xg-5VU" sceneMemberID="firstResponder"/>
                 <exit id="r1E-vc-1B0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-2124" y="-531.18440779610194"/>
+            <point key="canvasLocation" x="-2105" y="-833"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="6Ta-fX-lhn">
@@ -723,7 +724,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="08N-KE-9qv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1247.2" y="-531.18440779610194"/>
+            <point key="canvasLocation" x="-630" y="-488"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0iI-hW-j7c">
@@ -746,5 +747,9 @@
     </scenes>
     <resources>
         <image name="1" width="800" height="600"/>
+        <image name="Black_dot.png" width="300" height="250"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="rvg-sj-deB"/>
+    </inferredMetricsTieBreakers>
 </document>
