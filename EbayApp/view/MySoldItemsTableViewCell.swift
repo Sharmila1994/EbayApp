@@ -17,7 +17,10 @@ class MySoldItemsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var SoldProdIdLbl: UILabel!
     @IBOutlet weak var SoldProdLbl: UILabel!
-    @IBOutlet weak var SoldImgLbl: UIImageView!
+  //  @IBOutlet weak var SoldImgLbl: UIImageView!
+    
+    @IBOutlet weak var SoldImageLbl: UIImageView!
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

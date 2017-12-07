@@ -24,7 +24,7 @@ class SellProductViewController: UIViewController,UITableViewDataSource,UITableV
     
  
     @IBAction func cancelButton(_ sender: Any) {
-    
+     performSegue(withIdentifier: "producttoHomeBack", sender: nil)
       
     
     }

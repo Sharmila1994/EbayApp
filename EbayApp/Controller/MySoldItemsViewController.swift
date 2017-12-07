@@ -12,7 +12,9 @@ class MySoldItemsViewController: UIViewController, UITableViewDataSource, UITabl
 
     var SoldProdName:NSArray = []
     var SoldProdId:NSArray = []
-    // var SoldimageArray = Array<UIImage>()
+   // var SoldimageArray = Array<UIImage>()
+    
+    var SoldimageArray:NSArray = []
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -25,15 +27,15 @@ class MySoldItemsViewController: UIViewController, UITableViewDataSource, UITabl
         
         cell.SoldProdLbl.text! = SoldProdName[indexPath.row] as! String
         cell.SoldProdIdLbl.text! = SoldProdId[indexPath.row] as! String
-       // cell.SoldImgLbl.image  = SoldimageArray[indexPath.row]
+       cell.SoldImageLbl.image  = SoldimageArray[indexPath.row] as? UIImage
         
         return cell
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        SoldProdName = [" Nike Shoe", "Dell LapTop"]
-        SoldProdId = ["Bid Amount:20$" , "Bid Amount:600$" ]
+        SoldProdName = [ "WagonR","Karizma","Rolex Watch","HP Pavilion","Red Shoes","TV"]
+        SoldimageArray = [UIImage(named: "1")!,UIImage(named: "2")!, UIImage(named: "3")!, UIImage(named: "4")!,UIImage(named: "5")!, UIImage(named: "6")!]
+      SoldProdId = ["Prod Id:12ety5" , "Prod Id:J256ly5", "Prod Id:12ety5" , "Prod Id:J256ly5","Prod Id:12ety5" , "Prod Id:J256ly5"]
         
         // imageArray += [ UIImage(named: "1")!, UIImage(named: "2")!, UIImage(named: "3")!, UIImage(named: "4")!, UIImage(named: "5")!]
         
@@ -41,6 +43,10 @@ class MySoldItemsViewController: UIViewController, UITableViewDataSource, UITabl
     }
 
  
+    @IBAction func SoldBackLbl(_ sender: UIBarButtonItem) {
+         performSegue(withIdentifier: "Soldbackidentifier", sender: nil)
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

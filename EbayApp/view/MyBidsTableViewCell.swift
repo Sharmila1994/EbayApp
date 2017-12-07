@@ -23,6 +23,8 @@ class MyBidsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var imageLbl: UIImageView!
     
+    @IBAction func TapmeLbl(_ sender: UIButton) {
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

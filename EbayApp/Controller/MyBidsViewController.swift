@@ -16,8 +16,12 @@ class MyBidsViewController: UIViewController, UITableViewDataSource, UITableView
     var bidStatus:NSArray = []
     var imageArray = Array<UIImage>()
     
+ //   var backAction:String
     
-    
+    @IBAction func BidBackLbl(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "backidentifier", sender: nil)
+        
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
        return bidProdName.count
@@ -39,7 +43,17 @@ class MyBidsViewController: UIViewController, UITableViewDataSource, UITableView
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       bidProdName = [" Nike Shoe", "Dell LapTop"]
+       
+      
+        // Do any additional setup if required.
+    
+    
+    func backAction(){
+        //print("Back Button Clicked")
+        dismiss(animated: true, completion: nil)
+    }
+        
+        bidProdName = [" Nike Shoe", "Dell LapTop"]
         bidAmount = ["Bid Amount:20$" , "Bid Amount:600$" ]
         topPrice = ["Top Price:35$","Top Price:950$"]
         bidStatus = ["Bid Status:open", "Bid Status:closed"]

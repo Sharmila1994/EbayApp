@@ -17,10 +17,47 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     var Description: NSArray = []
     var UserId: NSArray = []
     
+    var isSlideMenuHidden = true
+   
+  
+    @IBOutlet weak var LeftLeadConLbl: NSLayoutConstraint!
+    
+    @IBAction func SideMenuBtn(_ sender: UIBarButtonItem) {
+        
+        if isSlideMenuHidden {
+            LeftLeadConLbl.constant = 0
+            
+        }
+        else{
+             LeftLeadConLbl.constant = -140
+        }
+       isSlideMenuHidden = !isSlideMenuHidden
+    }
+        
+    
+    
+    /*
+    @IBAction func SideMenuLbl(_ sender: UIBarButtonItem) {
+        
+        if isSlideMenuHidden {
+        LeftLeadingConLbl.constant = 0
+        }
+        else {
+             LeftLeadingConLbl.constant = -140
+        }
+        
+        isSlideMenuHidden = !isSlideMenuHidden
+    }
+    */
+    
     var selectedSegment = 1
     let array2 = ["1","2","3"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        //[[UIApplication, sharedApplication] setStatusBarHidden: NO];
+        
+     // LeftLeadingConLbl.constant = -140
+        
         // Do any additional setup after loading the view, typically from a nib.
         name = [ "WagonR","Karizma","Rolex Watch","HP Pavilion","Red Shoes","TV"]
         imageArr = [UIImage(named: "1")!,UIImage(named: "2")!, UIImage(named: "3")!, UIImage(named: "4")!,UIImage(named: "5")!, UIImage(named: "6")!]
@@ -57,16 +94,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if selectedSegment == 1
-        {
+       
+       
             return name.count
-            
-        }
-        else
-        {
-            return array2.count
-        }
-        
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // let  cell = tableview.dequ
@@ -80,23 +110,16 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         cell1.ExpiryTimeLbl.text! = ExpiryTime[indexPath.row] as! String
         cell1.UserIdLbl.text! = UserId[indexPath.row] as! String
         
-        let cell2 = tableView.dequeueReusableCell(withIdentifier: "Cell2") as! TableViewCell
-        
-        cell2.ProdImage.image = imageArr[indexPath.row] as? UIImage
+      
         // cell2.lblName.text! = name[indexPath.row] as! String
         
         //cell2.BidPriceLbl.text! = BidPrice[indexPath.row] as! String
         //cell2.ExpiryTimeLbl.text! = ExpiryTime[indexPath.row] as! String
         //cell2.UserIdLbl.text! = UserId[indexPath.row] as! String
-        if selectedSegment == 1
-        {
+       
             return cell1
             
-        }
-        else
-        {
-            return cell2
-        }
+       
     }
     func tableView(_ tableview: UITableView, didSelectRowAt indexPath: IndexPath)
     {

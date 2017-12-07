@@ -17,6 +17,7 @@ class productTableViewCell: UITableViewCell {
     @IBOutlet weak var lbl1: UILabel!
     
     
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
