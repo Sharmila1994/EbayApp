@@ -3,16 +3,23 @@ import Foundation
 
 class LoginViewController: UIViewController
 {
-    @IBOutlet weak var emaillbl: UITextField!
+ //   @IBOutlet weak var emaillbl: UITextField!
     
-    @IBOutlet weak var pwdlbl: UITextField!
+   // @IBOutlet weak var pwdlbl: UITextField!
     
-    @IBOutlet weak var signinLbl: UIButton!
+    //@IBOutlet weak var signinLbl: UIButton!
     
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+      /*
+        let imageView = UIImageView(frame: self.view.bounds)
+        imageView.image = UIImage(named: "Layer 14")//if its in images.xcassets
+        self.view.addSubview(imageView)
+        */
+        
       /*  let preferences = UserDefaults.standard
         if(preferences.object(forKey: "session") != nil)
         {
@@ -33,37 +40,22 @@ class LoginViewController: UIViewController
     }
 
 
-    @IBAction func signinbutton(_ sender: Any)
+ /*   @IBAction func signinbutton(_ sender: Any)
     {
-        
-       /* if(signinLbl.titleLabel?.text == "Logout")
-        {
-            let preferences = UserDefaults.standard
-            
-            preferences.removeObject(forKey: "session")
-            LoginToDo()
-           return
-        }
-        
-           */
-        
-        let emailid = emaillbl.text
-        let password = pwdlbl.text
+      // let emailid = emaillbl.text
+        //let password = pwdlbl.text
         
        // DoLogin(emaillbl: emailid!, pwdlbl: password!)
         
-        if(emailid == ""  || password == "")
+       // if(emailid == ""  || password == "")
         {
            // return
                // self.ViewController(SellProductViewController, animated:true, completion:nil)
         }
     }
-        
+  */
        /*  func DoLogin(emaillbl:String, pwdlbl:String)
         {
-            
-        
-        
             let url = URL(string: "https://example.com/api/v1/records.json")
             //let url = URL(string: "http://www.kaleidosblog.com/tutorials/login/api/login√")
             

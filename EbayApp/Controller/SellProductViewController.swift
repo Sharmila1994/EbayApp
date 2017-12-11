@@ -122,22 +122,22 @@ func saveButton(_ sender: UIButton)
     {
         let alert = UIAlertController(title: "Product Details has been saved sucessfully", message: message, preferredStyle: UIAlertControllerStyle.alert)
         
-        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default, handler: { (action) in
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { (action) in
             alert.dismiss(animated: true, completion: nil)
             
             self.performSegue(withIdentifier: "saveToHomeIdentifier", sender: nil)
             print("Yes")
         }))
-        alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.default, handler: { (action) in
-            alert.dismiss(animated: true, completion: nil)
-            print("No")
-        }))
+  //  alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.default, handler: { (action) in
+          //  alert.dismiss(animated: true, completion: nil)
+           // print("No")
+       // }))
         
         self.present(alert, animated: true, completion: nil)
     }
 
 
 
+
+
 }
-
-

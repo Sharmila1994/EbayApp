@@ -16,13 +16,13 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     var StartTime: NSArray = []
     var Description: NSArray = []
     var UserId: NSArray = []
-    
+ //   var segmentedControl = 0
     var isSlideMenuHidden = true
    
-  
-    @IBOutlet weak var LeftLeadConLbl: NSLayoutConstraint!
+ 
+  //  @IBOutlet weak var LeftLeadConLbl: NSLayoutConstraint!
     
-    @IBAction func SideMenuBtn(_ sender: UIBarButtonItem) {
+    /*@IBAction func SideMenuBtn(_ sender: UIBarButtonItem) {
         
         if isSlideMenuHidden {
             LeftLeadConLbl.constant = 0
@@ -33,32 +33,41 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         }
        isSlideMenuHidden = !isSlideMenuHidden
     }
-        
+      */
     
     
-    /*
-    @IBAction func SideMenuLbl(_ sender: UIBarButtonItem) {
-        
-        if isSlideMenuHidden {
-        LeftLeadingConLbl.constant = 0
-        }
-        else {
-             LeftLeadingConLbl.constant = -140
-        }
-        
-        isSlideMenuHidden = !isSlideMenuHidden
-    }
-    */
     
     var selectedSegment = 1
     let array2 = ["1","2","3"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+  
+        
+        
+        /*   let imageView = UIImageView(frame: self.view.bounds)
+        imageView.image = (named: "Layer 14")//if its in images.xcassets
+        self.view.addSubview(imageView)
+       */
+        
+        UISegmentedControl.appearance().setTitleTextAttributes(NSDictionary(objects: [UIFont.systemFont(ofSize: 20.0)], forKeys: [NSAttributedStringKey.font as NSCopying]) as? [AnyHashable : Any], for: UIControlState.normal)
+    
+    
+        
+        
         //[[UIApplication, sharedApplication] setStatusBarHidden: NO];
         
      // LeftLeadingConLbl.constant = -140
         
         // Do any additional setup after loading the view, typically from a nib.
+        
+       
+        
+      //  self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "Layer 14"))
+     //   self.view.contentMode = UIViewContentMode.ScaleAspectFil
+        
+        
+        
         name = [ "WagonR","Karizma","Rolex Watch","HP Pavilion","Red Shoes","TV"]
         imageArr = [UIImage(named: "1")!,UIImage(named: "2")!, UIImage(named: "3")!, UIImage(named: "4")!,UIImage(named: "5")!, UIImage(named: "6")!]
         BidPrice = [ "Current Bid Price = 10,000 $ ","Current Bid Price = 8,000 $ ","Current Bid Price = 1200 $ ","Current Bid Price = 6500 $ ","Current Bid Price = 200 $ ","Current Bid Price = 400 $ "]
@@ -79,9 +88,24 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        //self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
+        //super.viewWillAppear(animated)
+        
+        // Add a background view to the table view
+        let backgroundImage = UIImage(named: "Layer 14")
+        let imageView = UIImageView(image: backgroundImage)
+        self.TableviewLbl.backgroundView = imageView
+    }
+    
+    
+    
     @IBOutlet weak var TableviewLbl: UITableView!
     
     @IBAction func SegmentLbl(_ sender: UISegmentedControl) {
+        
+       
+        
         if sender.selectedSegmentIndex == 0 {
             
             selectedSegment = 1
