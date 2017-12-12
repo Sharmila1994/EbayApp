@@ -18,7 +18,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     var UserId: NSArray = []
  //   var segmentedControl = 0
     var isSlideMenuHidden = true
-   
+    var tempIndex : Int?
  
   //  @IBOutlet weak var LeftLeadConLbl: NSLayoutConstraint!
     
@@ -96,6 +96,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         let backgroundImage = UIImage(named: "Layer 14")
         let imageView = UIImageView(image: backgroundImage)
         self.TableviewLbl.backgroundView = imageView
+        self.TableviewLbl.reloadData()
     }
     
     
@@ -105,7 +106,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     @IBAction func SegmentLbl(_ sender: UISegmentedControl) {
         
        
-        
+        /*
         if sender.selectedSegmentIndex == 0 {
             
             selectedSegment = 1
@@ -113,7 +114,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         else {
             selectedSegment = 2
         }
-        self.TableviewLbl.reloadData()
+        self.TableviewLbl.reloadData() */
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -147,8 +148,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     func tableView(_ tableview: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        let Storyboard = UIStoryboard(name: "Main",bundle: nil)
-        let DvC = Storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        //let Storyboard = UIStoryboard(name: "Main",bundle: nil)
+        /*let DvC = Storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
         DvC.getImage = imageArr[indexPath.row] as! UIImage
         DvC.getname = name[indexPath.row] as! String
         DvC.getDCurrentBidPrice = BidPrice[indexPath.row] as! String
@@ -156,10 +157,27 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         DvC.getDExpiryTime = ExpiryTime[indexPath.row] as! String
         DvC.getStartTime = StartTime[indexPath.row] as! String
         
-        DvC.getDUserId = UserId[indexPath.row] as! String
+        DvC.getDUserId = UserId[indexPath.row] as! String*/
+        tempIndex = indexPath.row
+        self.performSegue(withIdentifier: "DetailViewController", sender: nil)
         
+       // self.navigationController?.pushViewController(DvC, animated: true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if  segue.identifier == "DetailViewController"{
+            let DvC = segue.destination as! DetailViewController
+            print(name[0])
+            DvC.getImage = imageArr[tempIndex!] as! UIImage
+            DvC.getname = name[tempIndex!] as! String
+            DvC.getDCurrentBidPrice = BidPrice[tempIndex!] as! String
+            DvC.getDescrition = Description[tempIndex!] as! String
+            DvC.getDExpiryTime = ExpiryTime[tempIndex!] as! String
+            DvC.getStartTime = StartTime[tempIndex!] as! String
+            DvC.getDUserId = UserId[tempIndex!] as! String
+            
+        }
         
-        self.navigationController?.pushViewController(DvC, animated: true)
     }
 }
 

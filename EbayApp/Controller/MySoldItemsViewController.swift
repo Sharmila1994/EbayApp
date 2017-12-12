@@ -44,7 +44,10 @@ class MySoldItemsViewController: UIViewController, UITableViewDataSource, UITabl
 
  
     @IBAction func SoldBackLbl(_ sender: UIBarButtonItem) {
-         performSegue(withIdentifier: "Soldbackidentifier", sender: nil)
+        
+        self.dismiss(animated:true,completion:nil)
+        // alert.dismiss(animated: true, completion: nil)
+       // performSegue(withIdentifier: "Soldbackidentifier", sender: nil)
         
     }
     override func didReceiveMemoryWarning() {

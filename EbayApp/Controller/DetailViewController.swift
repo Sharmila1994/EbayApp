@@ -10,17 +10,13 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    var getname = String()
-    var getImage = UIImage()
-    
-    var getDCurrentBidPrice = String()
-    
-    var getDExpiryTime = String()
-    
-    var getDUserId = String()
-    
-    var getDescrition = String()
-    var getStartTime = String()
+    var getname : String?
+    var getImage : UIImage?
+    var getDCurrentBidPrice : String?
+    var getDExpiryTime : String?
+    var getDUserId :String?
+    var getDescrition:String?
+    var getStartTime : String?
     
     
     
@@ -56,7 +52,7 @@ class DetailViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         imgImage.image = getImage
-        lblName.text! = getname
+        lblName.text = getname
         
         CBidPriceLbl.text = getDCurrentBidPrice
         ExpiryTimeLbl.text = getDExpiryTime

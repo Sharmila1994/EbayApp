@@ -78,7 +78,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xY7-7T-yLl" kind="presentation" id="ZBm-K3-ygy"/>
+                                    <segue destination="nHi-Cf-hRg" kind="presentation" id="n62-8R-xFM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9L9-5b-Sbs">
@@ -537,34 +537,12 @@
             <objects>
                 <viewController autoresizesArchivedViewToFullSize="NO" title="Home Page-LiveAuction" modalTransitionStyle="crossDissolve" id="nHi-Cf-hRg" customClass="ViewController" customModule="EbayApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleAspectFit" id="uGm-br-Tnj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eq-cu-a55">
-                                <rect key="frame" x="0.0" y="646" width="414" height="46"/>
-                                <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="Jlu-Zg-civ"/>
-                                    <constraint firstAttribute="width" constant="414" id="fnO-jg-AjL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Place a Bid">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="PlaceAbidLbl:" destination="r1E-vc-1B0" eventType="touchUpInside" id="VGj-Wi-I6f"/>
-                                    <segue destination="JtY-aj-myj" kind="popoverPresentation" popoverAnchorView="8eq-cu-a55" id="4Ha-mh-rCM">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" rowHeight="150" sectionHeaderHeight="50" sectionFooterHeight="20" translatesAutoresizingMaskIntoConstraints="NO" id="ur6-xB-8Pc">
-                                <rect key="frame" x="0.0" y="48" width="414" height="598"/>
+                                <rect key="frame" x="0.0" y="74" width="414" height="610"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="598" id="Gum-hn-7W5"/>
-                                    <constraint firstAttribute="width" constant="414" id="ZUE-29-HSr"/>
-                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="4" indentationWidth="0.0" reuseIdentifier="Cell1" focusStyle="custom" rowHeight="150" id="9dQ-C6-iHt" customClass="TableViewCell" customModule="EbayApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="414" height="150"/>
@@ -651,7 +629,7 @@
                                 </connections>
                             </tableView>
                             <segmentedControl autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aUK-Ac-cgP">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="51"/>
                                 <color key="backgroundColor" red="1" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="MM1-FP-lDs"/>
@@ -662,20 +640,41 @@
                                     <segment title="My Profile"/>
                                 </segments>
                                 <color key="tintColor" red="1" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="bk0-mf-jHF" kind="presentation" id="GZ1-TZ-cjy"/>
+                                </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eq-cu-a55">
+                                <rect key="frame" x="0.0" y="690" width="414" height="54"/>
+                                <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="K0H-Oj-MwL"/>
+                                    <constraint firstAttribute="height" constant="54" id="nq6-0d-z0g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Place a Bid">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="PlaceAbidLbl:" destination="r1E-vc-1B0" eventType="touchUpInside" id="VGj-Wi-I6f"/>
+                                    <segue destination="JtY-aj-myj" kind="popoverPresentation" popoverAnchorView="8eq-cu-a55" id="4Ha-mh-rCM">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="8eq-cu-a55" firstAttribute="top" secondItem="ur6-xB-8Pc" secondAttribute="bottom" id="LQb-si-eQ1"/>
-                            <constraint firstItem="ur6-xB-8Pc" firstAttribute="trailing" secondItem="9Uo-XL-RZx" secondAttribute="trailing" id="M0W-wC-CMr"/>
+                            <constraint firstItem="8eq-cu-a55" firstAttribute="top" secondItem="ur6-xB-8Pc" secondAttribute="bottom" constant="6" id="0LE-vr-rKz"/>
+                            <constraint firstItem="8eq-cu-a55" firstAttribute="leading" secondItem="9Uo-XL-RZx" secondAttribute="leading" id="0h3-RR-dyd"/>
                             <constraint firstItem="aUK-Ac-cgP" firstAttribute="leading" secondItem="9Uo-XL-RZx" secondAttribute="leading" id="QV7-jT-wZU"/>
+                            <constraint firstItem="8eq-cu-a55" firstAttribute="trailing" secondItem="9Uo-XL-RZx" secondAttribute="trailing" id="ROm-a7-OiW"/>
+                            <constraint firstItem="8eq-cu-a55" firstAttribute="bottom" secondItem="9Uo-XL-RZx" secondAttribute="bottom" constant="8" id="ag9-Hc-HW5"/>
+                            <constraint firstItem="ur6-xB-8Pc" firstAttribute="leading" secondItem="aUK-Ac-cgP" secondAttribute="leading" id="ahT-gK-pdb"/>
+                            <constraint firstItem="ur6-xB-8Pc" firstAttribute="top" secondItem="aUK-Ac-cgP" secondAttribute="bottom" constant="-4" id="i73-ct-K3t"/>
                             <constraint firstItem="aUK-Ac-cgP" firstAttribute="trailing" secondItem="9Uo-XL-RZx" secondAttribute="trailing" id="jH3-u0-RZ1"/>
-                            <constraint firstItem="8eq-cu-a55" firstAttribute="bottom" secondItem="9Uo-XL-RZx" secondAttribute="bottom" id="l0l-WB-Uvl"/>
-                            <constraint firstItem="8eq-cu-a55" firstAttribute="trailing" secondItem="9Uo-XL-RZx" secondAttribute="trailing" id="ts4-BA-e95"/>
-                            <constraint firstItem="ur6-xB-8Pc" firstAttribute="leading" secondItem="9Uo-XL-RZx" secondAttribute="leading" id="utd-hx-ruN"/>
-                            <constraint firstItem="aUK-Ac-cgP" firstAttribute="top" secondItem="uGm-br-Tnj" secondAttribute="top" id="vEi-Wx-QUX"/>
-                            <constraint firstItem="8eq-cu-a55" firstAttribute="leading" secondItem="9Uo-XL-RZx" secondAttribute="leading" id="wmd-Ir-ElM"/>
-                            <constraint firstItem="ur6-xB-8Pc" firstAttribute="top" secondItem="9Uo-XL-RZx" secondAttribute="top" constant="28" id="zKA-Dm-wlZ"/>
+                            <constraint firstItem="ur6-xB-8Pc" firstAttribute="trailing" secondItem="aUK-Ac-cgP" secondAttribute="trailing" id="tsd-0e-mPi"/>
+                            <constraint firstItem="aUK-Ac-cgP" firstAttribute="top" secondItem="uGm-br-Tnj" secondAttribute="top" constant="28" id="vEi-Wx-QUX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Uo-XL-RZx"/>
                     </view>
@@ -684,7 +683,6 @@
                     <navigationItem key="navigationItem" id="8Be-0S-yIf">
                         <nil key="title"/>
                     </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="TableviewLbl" destination="ur6-xB-8Pc" id="qTS-7n-OSK"/>
                         <segue destination="GJV-fW-UIC" kind="presentation" identifier="DetailViewController" id="RmH-gy-r6c"/>
@@ -693,7 +691,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CMd-Xg-5VU" sceneMemberID="firstResponder"/>
                 <exit id="r1E-vc-1B0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-4028.985507246377" y="-2015.217391304348"/>
+            <point key="canvasLocation" x="-4563.768115942029" y="-1957.3369565217392"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PAI-jl-NhQ">
@@ -793,6 +791,7 @@
                                 </state>
                                 <connections>
                                     <action selector="SubmitLbl:" destination="GJV-fW-UIC" eventType="touchUpInside" id="vum-2n-HKJ"/>
+                                    <segue destination="nHi-Cf-hRg" kind="presentation" id="oZr-tD-8DE"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Bid Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lZ-yn-m4h">
@@ -868,7 +867,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="08N-KE-9qv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3150.7246376811595" y="-2050.271739130435"/>
+            <point key="canvasLocation" x="-3003" y="-2292"/>
         </scene>
         <!--Side Menu Controller View Controller-->
         <scene sceneID="8Vk-bg-SDx">
@@ -959,26 +958,6 @@
             </objects>
             <point key="canvasLocation" x="-2868" y="535"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="0uB-Vq-vD7">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xY7-7T-yLl" sceneMemberID="viewController">
-                    <extendedEdge key="edgesForExtendedLayout"/>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="HbF-F6-kZ2"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oRd-a0-mzt">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="nHi-Cf-hRg" kind="relationship" relationship="rootViewController" id="MeN-gf-a7x"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jIC-GY-qUN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-4900" y="-2013"/>
-        </scene>
         <!--My SoldItems-->
         <scene sceneID="Qjt-ah-LSr">
             <objects>
@@ -1013,6 +992,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="4Ha-mh-rCM"/>
-        <segue reference="v0b-mR-MVA"/>
+        <segue reference="NPO-la-AAN"/>
     </inferredMetricsTieBreakers>
 </document>

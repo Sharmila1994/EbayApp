@@ -24,8 +24,9 @@ class SellProductViewController: UIViewController,UITableViewDataSource,UITableV
     
  
     @IBAction func cancelButton(_ sender: Any) {
-     performSegue(withIdentifier: "producttoHomeBack", sender: nil)
-      
+        self.dismiss(animated:true,completion:nil)
+     //performSegue(withIdentifier: "producttoHomeBack", sender: nil)
+
     
     }
     
@@ -123,21 +124,21 @@ func saveButton(_ sender: UIButton)
         let alert = UIAlertController(title: "Product Details has been saved sucessfully", message: message, preferredStyle: UIAlertControllerStyle.alert)
         
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { (action) in
-            alert.dismiss(animated: true, completion: nil)
+         //   alert.dismiss(animated: true, completion: nil)
             
-            self.performSegue(withIdentifier: "saveToHomeIdentifier", sender: nil)
+        self.performSegue(withIdentifier: "saveToHomeIdentifier", sender: nil)
             print("Yes")
+          // self.present(alert, animated: true, completion: nil)
         }))
   //  alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.default, handler: { (action) in
           //  alert.dismiss(animated: true, completion: nil)
            // print("No")
        // }))
         
-        self.present(alert, animated: true, completion: nil)
+      self.present(alert, animated: true, completion: nil)
+        
+        //alert.dismiss(animated: true, completion: nil)
+        
+        
     }
-
-
-
-
-
 }

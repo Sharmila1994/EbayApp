@@ -18,7 +18,10 @@ class MyBidsViewController: UIViewController, UITableViewDataSource, UITableView
     
  //   var backAction:String
     
-    @IBAction func BidBackLbl(_ sender: UIBarButtonItem) {
+    @IBAction func BidBackLbl(_ sender: Any) {
+
+        self.present(UIViewController(), animated: true, completion: nil)
+         self.dismiss(animated: true, completion: nil)
         performSegue(withIdentifier: "backidentifier", sender: nil)
         
     }
@@ -26,6 +29,7 @@ class MyBidsViewController: UIViewController, UITableViewDataSource, UITableView
     {
        return bidProdName.count
     }
+   
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
