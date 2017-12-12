@@ -47,7 +47,7 @@ class MyBidsViewController: UIViewController, UITableViewDataSource, UITableView
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Layer 14")!)
       
         // Do any additional setup if required.
     

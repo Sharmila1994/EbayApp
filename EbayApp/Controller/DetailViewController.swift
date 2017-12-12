@@ -49,7 +49,7 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Layer 14")!)
         // Do any additional setup after loading the view.
         imgImage.image = getImage
         lblName.text = getname

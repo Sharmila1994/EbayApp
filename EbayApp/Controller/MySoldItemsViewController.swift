@@ -33,6 +33,10 @@ class MySoldItemsViewController: UIViewController, UITableViewDataSource, UITabl
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        assignbackground()
+        
+     //    self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Layer 14")!)
+        
         SoldProdName = [ "WagonR","Karizma","Rolex Watch","HP Pavilion","Red Shoes","TV"]
         SoldimageArray = [UIImage(named: "1")!,UIImage(named: "2")!, UIImage(named: "3")!, UIImage(named: "4")!,UIImage(named: "5")!, UIImage(named: "6")!]
       SoldProdId = ["Prod Id:12ety5" , "Prod Id:J256ly5", "Prod Id:12ety5" , "Prod Id:J256ly5","Prod Id:12ety5" , "Prod Id:J256ly5"]
@@ -42,7 +46,22 @@ class MySoldItemsViewController: UIViewController, UITableViewDataSource, UITabl
         // Do any additional setup after loading the view.
     }
 
- 
+    func assignbackground(){
+        let background = UIImage(named: "Layer 14")
+        
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIViewContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
+    }
+    
+    
+    
+    
     @IBAction func SoldBackLbl(_ sender: UIBarButtonItem) {
         
         self.dismiss(animated:true,completion:nil)

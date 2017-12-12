@@ -42,10 +42,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         
-  
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Layer 14")!)
         
         
-        /*   let imageView = UIImageView(frame: self.view.bounds)
+        /* let imageView = UIImageView(frame: self.view.bounds)
         imageView.image = (named: "Layer 14")//if its in images.xcassets
         self.view.addSubview(imageView)
        */

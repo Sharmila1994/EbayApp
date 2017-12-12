@@ -56,7 +56,7 @@ class SellProductViewController: UIViewController,UITableViewDataSource,UITableV
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
+         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Layer 14")!)
         productName = ["Product name" , "Base price" , "Condition" ,"Description" ,"Expiration"]
         
         //Get Path

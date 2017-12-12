@@ -23,7 +23,6 @@
 		05B2CDE01FC3DDBA0067A812 /* EbayAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B2CDDF1FC3DDBA0067A812 /* EbayAppUITests.swift */; };
 		05E66DF31FC5ABCF00A38DFC /* productTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E66DF21FC5ABCF00A38DFC /* productTableViewCell.swift */; };
 		05E66DF51FC5AE8000A38DFC /* SellProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E66DF41FC5AE8000A38DFC /* SellProductViewController.swift */; };
-		9A0F9D311FD900AC00B08049 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F9D301FD900AB00B08049 /* SideMenuViewController.swift */; };
 		9A1618771FD7FB6E00BF9555 /* Side.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1618761FD7FB6E00BF9555 /* Side.swift */; };
 		9AE2AFD31FD6967F00DCA977 /* MySoldItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE2AFD21FD6967F00DCA977 /* MySoldItemsViewController.swift */; };
 		9AE2AFD91FD6CFD900DCA977 /* MySoldItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE2AFD81FD6CFD900DCA977 /* MySoldItemsTableViewCell.swift */; };
@@ -69,7 +68,6 @@
 		05B2CDE11FC3DDBA0067A812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05E66DF21FC5ABCF00A38DFC /* productTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productTableViewCell.swift; sourceTree = "<group>"; };
 		05E66DF41FC5AE8000A38DFC /* SellProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellProductViewController.swift; sourceTree = "<group>"; };
-		9A0F9D301FD900AB00B08049 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		9A1618761FD7FB6E00BF9555 /* Side.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Side.swift; sourceTree = "<group>"; };
 		9AE2AFD21FD6967F00DCA977 /* MySoldItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySoldItemsViewController.swift; sourceTree = "<group>"; };
 		9AE2AFD81FD6CFD900DCA977 /* MySoldItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySoldItemsTableViewCell.swift; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 				05167AC21FCD77B20045E618 /* MyBidsViewController.swift */,
 				9AE2AFD21FD6967F00DCA977 /* MySoldItemsViewController.swift */,
 				9A1618761FD7FB6E00BF9555 /* Side.swift */,
-				9A0F9D301FD900AB00B08049 /* SideMenuViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -333,7 +330,6 @@
 				9AE2AFD91FD6CFD900DCA977 /* MySoldItemsTableViewCell.swift in Sources */,
 				0592EA651FD530900055ECBC /* TableViewCell.swift in Sources */,
 				05167AC31FCD77B20045E618 /* MyBidsViewController.swift in Sources */,
-				9A0F9D311FD900AC00B08049 /* SideMenuViewController.swift in Sources */,
 				0592EA6E1FD53FDA0055ECBC /* ViewController.swift in Sources */,
 				05167AC51FCD7C110045E618 /* MyBidsTableViewCell.swift in Sources */,
 				05B2CDC01FC3DDB90067A812 /* AppDelegate.swift in Sources */,
