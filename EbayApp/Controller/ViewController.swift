@@ -50,7 +50,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         self.view.addSubview(imageView)
        */
         
-        UISegmentedControl.appearance().setTitleTextAttributes(NSDictionary(objects: [UIFont.systemFont(ofSize: 20.0)], forKeys: [NSAttributedStringKey.font as NSCopying]) as? [AnyHashable : Any], for: UIControlState.normal)
+        UISegmentedControl.appearance().setTitleTextAttributes(NSDictionary(objects: [UIFont.boldSystemFont(ofSize: 20.0)], forKeys: [NSAttributedStringKey.font as NSCopying]) as? [AnyHashable : Any], for: UIControlState.normal)
     
     
         
@@ -70,7 +70,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         name = [ "WagonR","Karizma","Rolex Watch","HP Pavilion","Red Shoes","TV"]
         imageArr = [UIImage(named: "1")!,UIImage(named: "2")!, UIImage(named: "3")!, UIImage(named: "4")!,UIImage(named: "5")!, UIImage(named: "6")!]
-        BidPrice = [ "Current Bid Price = 10,000 $ ","Current Bid Price = 8,000 $ ","Current Bid Price = 1200 $ ","Current Bid Price = 6500 $ ","Current Bid Price = 200 $ ","Current Bid Price = 400 $ "]
+        BidPrice = [ "Current Bid Price = 5000 $ ","Current Bid Price = 8,000 $ ","Current Bid Price = 1200 $ ","Current Bid Price = 6500 $ ","Current Bid Price = 200 $ ","Current Bid Price = 400 $ "]
         ExpiryTime = [ "Expiry Time = 12:30 PM","Expiry Time = 4:30 PM","Expiry Time = 2:30 AM","Expiry Time = 8:05 AM","Expiry Time = 9:30 PM","Expiry Time = 5:55 AM"]
         
         StartTime = [ "Start Time = 12:30 AM","Start Time = 2:30 AM","Start Time = 9:30 PM","Start Time = 8:25 PM","Start Time = 8:30 AM","Start Time = 5:25 PM"]

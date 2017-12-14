@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class MyBidsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
     var bidProdName:NSArray = []
@@ -48,8 +49,31 @@ class MyBidsViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Layer 14")!)
-      
-        // Do any additional setup if required.
+          
+        
+        
+       
+     //   UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Font-Name", size: 20)!], for: .selected)
+        
+        
+      /*  let colorNormal : UIColor = UIColor.black
+        let colorSelected : UIColor = UIColor.white
+        let titleFontAll : UIFont = UIFont(name: "American Typewriter", size: 15.0)!
+        
+        let attributesNormal = [
+            NSAttributedStringKey.foregroundColor : colorNormal,
+            NSAttributedStringKey.font : titleFontAll
+        ]
+        
+        let attributesSelected = [
+            NSAttributedStringKey.foregroundColor : colorSelected,
+            NSAttributedStringKey.font : titleFontAll
+        ]
+        
+        UITabBarItem.appearance().setTitleTextAttributes(attributesNormal,for:.normal)
+        UITabBarItem.appearance().setTitleTextAttributes(attributesSelected, for: .selected)
+        */
+    // Do any additional setup if required.
     
     
     func backAction(){
@@ -66,6 +90,8 @@ class MyBidsViewController: UIViewController, UITableViewDataSource, UITableView
         // Do any additional setup after loading the view.
     }
 
+   
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
